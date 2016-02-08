@@ -4,7 +4,8 @@ Rails application with a single endpoint that adds commas to a string
 
 Run the test using ```bundle exec rspec```
 
-```GET /commafy/1234567/3
+```
+GET /commafy/1234567/3
 
 Should return:
 
