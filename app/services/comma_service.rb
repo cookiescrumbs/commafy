@@ -1,7 +1,7 @@
 class CommaService
-  def self.commafied(params)
-    string_parts = params[:string].split('.')
-    first_part = self.format_first_part(string_parts[0], params[:interval])
+  def self.commafied(string:, interval:)
+    string_parts = string.split('.')
+    first_part = self.format_first_part(string_parts[0], interval)
     self.concatenate(first_part, string_parts)
   end
 
@@ -12,5 +12,4 @@ class CommaService
   def self.concatenate(first_part, string_parts)
     (string_parts.count == 2)? first_part + '.' + string_parts[1] : first_part
   end
-
 end
