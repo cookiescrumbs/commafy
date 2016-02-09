@@ -5,7 +5,7 @@ class CommafyController < ApplicationController
   def index
     @original = string
     @interval = interval
-    @commafied = CommaService::commafied({interval: interval, string: string })
+    @commafied = CommaService::commafied(string: string, interval: interval)
   end
 
   private
